@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Home</title>
+<link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+                  <div class="nav">
+				  
+				  <ul>
+  							<li><a href="index.html">Introduction</a></li>
+  							<li><a href="ProjectEnh.html">Code Review</a></li>
+ 						 	<li><a href="ProjectEnh2.html">Project Enhancement</a></li>
+  							
+				  </ul>
+				  
+				  </div>
+				  
+				  
+				  <div class="intro">
+				  
+				  <p>
+FarkleRules game was a simple console C++ program. When a user runs the program, the program asks for the number of players who wish to play the game. The program then creates the players and each player will be given a unique name, though this was not fully checked in the program, therefore a user can enter the same name for a different player. Each player will then be given equal chance to roll a dice and meanwhile, the points will be recorded for each player and at the end, a winner will be obtained and displayed to the user.</p>
+<p>
+After a successful code review, I came up with the following results. First and for most, I found out that the code was not fully commented. There were very few comments only stating what happens in each class and method. There were no comments to explain the working or usage of each class in the program files. There should be header comments that describe the usage or work of each class. Also, we should have comments to explain fully the working of each function.</p>
+<p>
+Secondly, there were no error handling techniques in the program code. This means the program was prone to run time abnormalities. One of the error handling technique that could have been used is the try-catch blocks to catch any encountered exceptions. For example, a user is asked to enter the number of player’s wishes to play. A user can enter a string accidentally, the program also asks for the names of each player, these inputs should be in try-catch block so that if wrong input is received then it is handled accordingly. To also Improve the program,  when input is needed from the user a while loop should be used to make sure that the program keeps on asking for users name until a correct name or number of players is received by the program. Or in the case where a wrong input is received then a default name should be used so that we have correct output from the program.
+</p>
+<p>
+Thirdly, the program exit after it displays the winner, no menu to ask if a user wishes to play again or wants to exit. Therefore I think it will be more interesting if there is a list of options displayed to the user to choose the next action. E.g. close the program, Replay the Game, View Winners etc. To play multiple times, a while loop should be introduced in the game, at the end of each game, when a winner is obtained, the user should be asked if he or she wishes to quit or would like to continue playing. If he wishes to play the game again then the game should restart itself.</p>
+<p>
+When the program starts, it’s important to see a list of options like the ones we mentioned above. This gives the user more control over the game and also the game becomes more interesting, however, there are no options of any kind, the program starts, asks for names, run and then display winner and exits. We do not have options to edit names of the players, options to start the game after names are set. The game will be more interactive if we are introduced by a menu to choose what to do, like entering option 1 to start the game, option 2 to quit, option 3 to add more players and so on. To enhance this game, a menu should be introduced that will guide the user on the different areas of the game.</p>
+<p>
+Some variable names used were not descriptive. In most of the for-loops, a variable name i is used. A more descriptive name like count can be used in the loops instead of the meaningless letter. Also, variables names like "name" to mean names of players can be replaced with playername this will make the programs codes easy to read and understand.</p>
+<p>
+The program has no storage area for the results of each play. When the game is played multiple times, the user can only view the current winner, the other records are not stored anywhere. A game can be more interesting if it is in a position to display the ranks of all the players, the winner of the previous records and also the top scores. After each play, the program should rank the players and compare them with the previous players to get the top five players. This can be achieved if the records can be stored in a standalone database or a text file.
+Using a text file we can store the top scores. We will then be able to retrieve these records once the game is started and display them to the users. Displaying the top scores before the user plays the game will make the game even interesting because the user has a goal to achieve like breaking the current record.</p>
+
+				  
+				  </div>
+				  
+				  <div class="footer">
+				                    <p>
+									              <a href="https://github.com/zaidjadam/farklerules">Project</a>
+									</p>
+				  </div>
+</body>
+</html>

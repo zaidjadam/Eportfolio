@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Home</title>
+<link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+                  <div class="nav">
+				  
+				  <ul>
+  							<li><a href="index.html">Introduction</a></li>
+  							<li><a href="ProjectEnh.html">Code Review</a></li>
+ 						 	<li><a href="ProjectEnh2.html">Project Enhancement</a></li>
+  							
+				  </ul>
+				  
+				  </div>
+				  
+				  
+				  <div class="intro">
+				  
+				 <p>
+ After finding out the existence of these defects in my project, I went a step ahead to correct them and I also modified the program to improve its quality.
+Firstly I added more comments in each block. This will make other programmers to easily understand my project for future modification and correction. This will also enable me to easily find the source of bugs in the case where the program does not produce the expected results during execution.</p>
+<p>
+Secondly, I added error handling techniques in the program. I introduced try-catch blocks in my program codes to handle any exceptions that may occur during program executions. Since users input should not be trusted, then each block that will require user input is enclosed in a try-catch block to make sure the right format of the required input is obtained. Furthermore, to make sure we obtain the correct data from the user, a while loop is also introduced, in the case where the user enters a wrong input then the program will ask again the user to enter the input.</p>
+
+<p>
+Furthermore, loops and branches are among parts of my code that needed to be reworked on in my project. Some IF-ELSE statements did not have defaults cases. This means that the IF-ELSE statement may bring logical errors in the block of code where they are found. Since logical errors cannot be easily be detected by our compilers this may take a long time to remove search errors or may leave a deployed application with such errors. This has further improved the quality of the project.</p>
+<p>
+The previous program had issues with records storage. To enhance this part of the project, I had two options, using a text file or a database. I first used a text file but then I came to realize that it did not give me options in records management. It was difficult to store many records of different kind in the same text file as opposed to a single database file. Therefore I decided to choose a database as a means of storing a player’s records.</p>
+<p>
+Also, we have many database management software at our disposal. Getting one to work with our project is also another challenge. However, after a small research, I found out that using SQLite is the best option for my project. SQLite is a standalone database management software that need not be installed for it to be used. Secondly, it’s a single file, we only need its drives to connect to it and use it. It is also simple to use, since it is serverless, no need to install servers in user’s machines in order to use the DB. Therefore I used SQLite database to store most of the program’s output. These outputs include winner’s records, top scores and many others.</p>
+<p>
+Using SQLite database gave me a chance to enhance my skills in database management. I was able to connect the SQLite database file with my project. Using C++ SQLite drivers it was possible to write and execute SQL statements in my program. I was able to use C++ to create the tables, Inserting data into the tables, updating existing data, Deleting records and deleting entire tables. This further enhanced my skills in database management software.</p>
+
+<p>
+C++ interphase APIS can be downloaded for free. These are the files that make it possible to work with SQLite files from a C++ program. There is also more information in SQLite online documentation which makes it easier to work with SQLite in C++ programs. </p>
+
+<p>
+<strong>Conclusion</strong><br>
+I have come to realize that engaging myself in class assignments, the part of code reviews and performing enhancements on my project has really enhanced my skills in computer science. These activities have given me a chance to solve really life problems. I am very sure I can solve other problems and also I am able to improve other projects once I get a chance.
+
+</p>
+
+				  </div>
+				  
+				  <div class="footer">
+				                    <p>
+									              <a href="https://github.com/zaidjadam/farklerules">Project</a>
+									</p>
+				  </div>
+</body>
+</html>
